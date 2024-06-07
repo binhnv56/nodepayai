@@ -8,5 +8,5 @@ WORKDIR /usr/src/app
 COPY src .
 RUN pip install --no-cache-dir -r ./requirements.txt --break-system-packages
 
-CMD [ "python", "./main.py" ]
+CMD [ "python", "-u", "./main.py" ]
 EXPOSE 80
